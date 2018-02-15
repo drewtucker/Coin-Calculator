@@ -10,15 +10,16 @@
     <div class="container">
       <div class="jumbotron">
         <h1>Coin Counter</h1>
-        @if (Model != null)
-        {
-          <h3>Quarters: @Model[0]</h3>
-          <h3>Dimes: @Model[1]</h3>
-          <h3>Nickels: @Model[2]</h3>
-          <h3>Pennies: @Model[3]</h3>
-        }
+
 
       </div>
+      @if (Model != null)
+      {
+        <h3>Quarters: @Model[0]</h3>
+        <h3>Dimes: @Model[1]</h3>
+        <h3>Nickels: @Model[2]</h3>
+        <h3>Pennies: @Model[3]</h3>
+      }
       <a href="/coin/form">Count some coins!</a>
     </div>
 
